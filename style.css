@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 
@@ -19,6 +20,7 @@ body {
 
 
 h1 {
+    font-size: 22px;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
     margin-block: 0;
@@ -28,17 +30,26 @@ h1 {
 img {
     display: block;
     border-radius: 20px;
+    width: 288px;
 }
 
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 40px;
-    border-radius: 20px;
+    max-inline-size: 320px;
     background-color: hsl(0, 0%, 100%);
-    inline-size: 70%;
-    min-inline-size: 320px;
-    max-inline-size: 480px;
+}
+
+
+.main-container {
+    gap: 24px;
+    border-radius: 20px;
+    padding: 16px 16px 40px;
+}
+
+
+.content-container {
+    gap: 16px;
+    padding-inline: 16px;
 }
