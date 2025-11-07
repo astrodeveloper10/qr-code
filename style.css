@@ -4,11 +4,16 @@
 
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    text-align: center;
     background-color: hsl(212, 45%, 89%);
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     color: hsl(216, 15%, 48%);
-    text-align: center;
     font-size: 15px;
 }
 
@@ -33,7 +38,7 @@ img {
     padding: 40px;
     border-radius: 20px;
     background-color: hsl(0, 0%, 100%);
-    margin-inline: auto;
-    /* inline-size: 320px; */
-    max-inline-size: 1200px;
+    inline-size: 70%;
+    min-inline-size: 320px;
+    max-inline-size: 480px;
 }
